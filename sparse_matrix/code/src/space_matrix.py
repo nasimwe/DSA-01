@@ -123,7 +123,7 @@ def main():
     Main function to handle user interaction, perform matrix operations, and save results to a file.
     """
     home_directory = os.path.expanduser("~")
-    directory = os.path.join(home_directory, "Desktop/dsa/sparse_matrix/sample_input_for_students/")
+    directory = os.path.join(home_directory, "Desktop/DSA-01/sample_input_for_students/")
     
     # List available files for Matrix 1 and get user choice
     print("Available files for Matrix 1:")
@@ -155,7 +155,7 @@ def main():
 
     # Get the output filename from the user and save the result
     output_filename = input("Enter the output filename: ").strip()
-    output_directory = os.path.join(home_directory, "Desktop/dsa(1)/dsa/sparse_matrix/sample_results/")
+    output_directory = os.path.join(home_directory, "Desktop/DSA-01/sparse_matrix/sample_results/")
     os.makedirs(output_directory, exist_ok=True)
     result.toFile(os.path.join(output_directory, output_filename))
 
